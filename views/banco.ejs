@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/style.css">
+		<title>ExemploNode</title>
+		<script type="text/javascript" src="javascript/scriptPostGet.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Exemplo Node</h1>
+		</header>
+		<section>
+			<h3>Vieram do banco:</h3>
+			<p>id 	nome	cpf</p>
+			 <% pessoas_all.forEach(function(pessoa){ %>
+    			<p><%= pessoa.id %>
+    			<%= pessoa.nome %>
+    			<%= pessoa.cpf %></p>
+  			<% }); %>
+
+  			<h3>Pessoa com id = 12:</h3>
+  			<p>id 	nome	cpf</p>
+			 <% pessoa_id_12.forEach(function(pessoa){ %>
+    			<p><%= pessoa.id %>
+    			<%= pessoa.nome %>
+    			<%= pessoa.cpf %></p>
+  			<% }); %>
+
+		</section>
+		<footer>
+				<div id="copyright">
+	    			<div id="copyrightfont">
+	      				Copyright 2017©
+	    			</div>
+				</div>
+		</footer>
+	</body>
+</html>
